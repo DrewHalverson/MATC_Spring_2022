@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Author:  your name
+          Date:    
+  -->
+	  <title>Customer Comments</title>
+	  <meta charset="UTF-8"  />
+	  <link href="stylesheets/comments.css"  rel="stylesheet"  type="text/css"  />
+		<link href="stylesheets/master.css" rel="stylesheet" type="text/css" />
+	  <script src="javascript/comments.js"></script>
+  </head>
+
+<body>
+  <header>
+     <nav>
+        <a href="index.html">Home</a>&nbsp;&nbsp;&bull;&nbsp;
+        <a href="allProducts.html">All Products</a>&nbsp;&nbsp;&bull;&nbsp;
+        <a href="allArtists.html">All Artists</a>&nbsp;&nbsp;&bull;&nbsp;
+        <a href="faq.html">FAQ</a>&nbsp;&nbsp;&bull;&nbsp;
+        <a href="friendsInfo.html">Friends</a>
+    </nav>
+
+    <h1>Arte Del Mundo &#174;</h1>
+	</header>
+  <hr />
+ <main>
+    <h2>Customer Comments</h2>
+	  <article>
+	      <h3>Please send in a comment of any kind to Arte Del Mundo staff!</h3>
+		  	<p>If the "PrtScn" button does not produce a window asking about how to save the screen print, try the Windows Snipping Tool, or other screen capture software such as SnagIt, if available, for making a screen print. There may or may not be a spellchecker in the area you are keying your comment, so double-check all spelling before clicking the Submit button</p>
+     </article>
+
+    <div id="myform">
+		<form name="form01"
+			 action="http://itins3.madisoncollege.edu/echo.php"
+			 method="post"
+			 onReset="resetFields();" >
+
+                <!-- basic input fields -->
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" placeholder="First Name" id="firstname"
+				   pattern="[A-Za-z]{1}[A-Za-z '-]{0,19}"
+				   minlength="1"
+				   maxlength="20" title="Enter 1 to 20 characters" required />
+				   <span id="firstname_error" class="errorMessages"></span>
+                <br>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" placeholder="Last Name" id="lastname"
+				   pattern="[A-Za-z]{1}[A-Za-z '-]{1,19}"
+				   minlength="2"
+				   maxlength="20" title="Enter 2 to 20 characters"
+				   required />
+				   <span id="lastname_error" class="errorMessages"></span>
+                <br />
+
+
+			<label>Comments: </label><span id="comments_error" class="errorMessages"></span><br />
+			<textarea name="comments" id="comments"
+				   minlength="1"
+				   maxlength="1000" title="Enter 10 characters or more" required
+			       placeholder="Key in your comment here, and click the Submit button"></textarea>
+			<br /><br />
+
+			<input type="checkbox" id="contact" onchange="checkContact();" >Check if you would like a staff person to contact you
+			<span id="moreinfo"><br /><br /></span>
+
+			<br /><br />
+        <div class="formbuttons">
+			    <input class="buttons" type="submit" value="Submit My Comment" />
+          <input class="buttons" type="reset"  value="Clear form" />
+        </div>
+		</form>
+    </div>
+
+  </main>
+  <hr />
+
+  <footer>
+      <p class="footnav">
+        <a href="index.html"><img src="images/back_blue.png" alt="Home" /></a></p>
+
+		  <address>Revised  01/2020 student name webmaster@artedelmundo.com</address>
+	</footer>
+</body>
+</html>

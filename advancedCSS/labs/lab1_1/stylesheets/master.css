@@ -1,0 +1,82 @@
+/* External Style Sheet for index.html & comments.html pages
+   Author:  Lab 1.1 solution
+   Date:     1/24/2020
+   Lab 1.1
+*/
+* {
+  box-sizing: border-box;
+}
+
+body  {
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+main {
+    padding: 1em;
+}
+
+/* Navigation styles */
+
+nav {
+    text-align: center;
+}
+
+nav a {
+	font-weight: bold;
+}
+
+/* unvisited link */
+nav a:link {
+    color: green;
+}
+
+/* visited link */
+nav a:visited {
+    color: purple;
+}
+
+/* selected link */
+nav a:active {
+    color: yellow;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    text-shadow: 2px 2px #c7c7b9;
+	  background-color: yellow;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+footer {
+    background-color: #62efe3;
+    padding: 1em;
+	  margin-top: 2em;
+	  margin-bottom: 1.5em;
+    clear: both;
+}
+
+address {
+    text-align: right;
+}
+
+h2 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 1.65em;
+}
+
+h3 {
+    color: cadetblue;
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow: 2px 2px #c7c7b9;
+}
+aside {
+    width: 15em;
+}

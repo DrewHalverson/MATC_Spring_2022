@@ -1,0 +1,61 @@
+/* External Style Sheet for index.html Page
+   Author:
+   Date:
+   Lab 1.1
+*/
+
+h2 {
+	color: #062bd6;
+}
+
+ul li {
+	  margin-bottom: 1em;
+}
+
+main {
+	  width: 75%;
+	  float: left;
+}
+
+#main {
+	 width: 25em;
+	 float: left;
+	 margin-right: 2em;
+}
+
+img {
+    width: 100%;
+    border-width: 5px;
+    border-style: ridge;
+    box-shadow: 5px 5px 2px #888888;
+}
+
+.custComment {
+    font-size: .75em;
+	  font-style: italic;
+}
+
+#custLink {
+	  text-align: center;
+}
+
+#navMain, #navBottom {
+	  text-align: center;
+}
+
+#revisionDate {
+	 text-align: right;
+}
+
+aside {
+    width: 25%;
+    border: .25em solid cadetblue;
+    background-color: yellow;
+    box-shadow: 5px 5px 5px #888888;
+    float: right;
+    /* margin-left: 2em;
+    margin-bottom: 2em; */
+    border-radius: 25px;
+    padding: 1em;
+		margin-top: 1em;
+}

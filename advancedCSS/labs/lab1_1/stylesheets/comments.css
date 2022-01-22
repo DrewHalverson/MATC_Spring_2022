@@ -1,0 +1,77 @@
+/* External Style Sheet for comments.html Page
+   Author:  Lab 1.1 solution
+   Date:     1/24/2020
+   Lab 1.1
+*/
+
+
+body  {
+      text-align: center;
+}
+
+
+.footnav {
+    text-align: center;
+}
+
+article p {
+    text-align: left;
+}
+
+#myform {
+    display: inline-block; /* reduces the width of the form to only what is necessary */
+    text-align: left;
+}
+
+form {
+    display: block;
+	margin-left: auto;
+    margin-right: auto;
+	border: 3px solid blue;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+label {
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 0.75em;
+}
+
+
+fieldset {
+	padding: 20px;
+	margin-left: 2em;
+	width: 75%;
+}
+
+#email {
+	width: 25em;
+}
+
+.setWidth {
+    width: 8em;
+    display: inline-block;
+}
+
+textarea {
+    height: 4em;
+    width: 50em;
+}
+
+.formbuttons{
+    text-align: center;
+}
+.buttons {
+    background-color: lightblue;
+    border-radius: 0.2em;
+    color: #931e1e;
+    font-weight: bold;
+    padding: 1em;
+    margin-right: 0.5em;
+}
+
+.errorMessages {
+    color: red;
+    font-style: italic;
+}
