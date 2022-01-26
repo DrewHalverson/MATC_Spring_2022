@@ -18,12 +18,12 @@
 // refactored
 
 const validate = () => {
-	use strict;
+	"use strict";
     	let usernameField = document.querySelector("#username");
-    	console.log(usernameField.value);
+
     	if (username.value == "") {
-        alert("username is a required field");
+        	alert("username is a required field");
     	} else {
-        alert("You have entered " + usernameField.value + " as the user name.");
+        	alert("You have entered " + usernameField.value + " as the user name.");
     	}
 }
