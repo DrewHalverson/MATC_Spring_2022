@@ -1,4 +1,17 @@
 body {
+    margin: 0.25em;
+    --bg-color: #98FB98;
     background-color: lightblue;
-    margin: 1.5em;
+}
+
+@supports (background-color: var(--bg-color)) {
+    body {
+        background-color: var(--bg-color);
+    }
+}
+
+@supports not (background-color: var(--bg-color)) {
+    body {
+        background-color: red;
+    }
 }

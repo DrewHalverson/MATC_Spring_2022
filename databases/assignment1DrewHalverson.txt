@@ -1,0 +1,36 @@
+
+
+1.2 - Why do today's Internet Web applications and smartphone apps need database?
+	
+	Most of the functionality of these applications depends on the use of data that is stored in databases.
+
+1.6 - Describe the purpose of a database.
+
+	Databases store data and allow users to access, change, add to and delete that data efficiently. 
+
+1.7 - What is a modification problem? What are the three possible types of modification problems?
+
+	Modification problems occur when changes are attempted for a list that contains multiple data types.
+	Three types of modification problems are inconsistent data, data loss, and incomplete data. 
+
+1.9 - Name the two themes in the list in Figure 1-35.
+
+	Pet information and Owner information
+
+1.14 - Another version of the list used by the veterinary office is shown in Figure 1-36. How many themes does this list have? What are they?
+
+	 Three. Pet info, Owner info, Service info
+
+1.18 - Name the four components of a database system.
+
+	Users, database application, database management system, database
+
+1.36 - What is cloud computing? Where are the hardware and network resources used in cloud computing located?
+
+	Cloud computing is using computer resources that are off site and managed by another entity. Resources are usually located in an offsite data center. 
+
+	
+
+	
+
+	
