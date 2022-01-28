@@ -1,0 +1,29 @@
+Requirement #1 Performance Data
+
+WIFI
+page loading speed: 391 ms
+number of HTTP requests: 19
+
+Fast 3G
+page loading speed: 4.83 s
+number of HTTP requests: 19
+
+Slow 3G
+page loading speed: 16.87 s
+number of HTTP requests: 19
+
+
+Requirement #5 Performance Data
+
+WIFI
+page loading speed: 270ms
+number of HTTP requests: 15
+
+Good 2G
+page loading speed: 5.77s
+number of HTTP requests 15
+
+Fast 3G
+page loading speed: 3.21 s
+number of HTTP requests: 15
+

@@ -5,6 +5,10 @@
    Author:
    Date:
  */
+* {
+   box-sizing: border-box;
+}
+
 img {
    max-width: 100%;
    height: auto;
@@ -253,6 +257,49 @@ footer {
   padding: .5em;
 }
 
+.css-sprite-social_media_facebook
+{
+background:url('../images/css-sprite-combined.png') 0px -0px;
+width:64px;height:64px;
+display:inline-block;
+}
+
+.css-sprite-social_media_flickr
+{
+background:url('../images/css-sprite-combined.png') -64px -0px;
+width:64px;height:64px;
+display:inline-block;
+}
+
+.css-sprite-social_media_instagram
+{
+background:url('../images/css-sprite-combined.png') -128px -0px;
+width:64px;height:64px;
+display:inline-block;
+}
+
+.css-sprite-social_media_pinterest
+{
+background:url('../images/css-sprite-combined.png') -192px -0px;
+width:64px;height:64px;
+display:inline-block;
+}
+
+.css-sprite-social_media_twitter
+{
+background:url('../images/css-sprite-combined.png') -256px -0px;
+width:64px;height:64px;
+display:inline-block;
+}
+
+.css-sprite-social_media_yelp
+{
+background:url('../images/css-sprite-combined.png') -320px -0px;
+width:64px;height:64px;
+display:inline-block;
+}
+
+
 /* print styles */
 @media print {
    body, h2, article {
@@ -269,3 +316,27 @@ footer {
 @page {
    margin: 0.75in;
 }
+
+/* screen styles */
+@media screen and (min-width: 768px) {
+   header h1 {
+      font-size: 2.5em;
+   }
+
+   .decorative-image {
+      width: 20%;
+      float: left;
+      padding-top: 0em;
+   }
+
+  .sitenavigation li {
+      display: inline-block;
+      font-size: 20px;
+   }
+
+   footer .locations {
+      width: 32%;
+      padding: 0.25em;
+      float: left;
+   }
+} 
