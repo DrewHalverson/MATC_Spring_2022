@@ -1,0 +1,18 @@
+
+Pre-Change Documentation
+
+WiFi-loading-time: 132 ms
+Fast3G-loading-time: 1.59 s
+Good-2G-loading-time: 1.65 s
+
+Post- Cahnge Documentation
+
+WiFi-loading-time: 167 ms
+Fast3G-loading-time: 1.48 s
+Good-2G-loading-time: 1.34 s
+
+
+Summary:
+
+It appears that speed is improved slightly on slower connections, but that it declines in performance
+on a good WiFi connection.

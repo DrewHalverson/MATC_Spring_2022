@@ -1,0 +1,120 @@
+body {
+  background-color: #FFC861;
+  margin: 0 10%;
+  font-family: sans-serif;
+  }
+
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+  color: darkred;
+  transition: color 3s linear;
+}
+
+h1:hover {
+  color: white
+}
+
+h2 {
+  color: #70211A;
+  font-size: 1em;
+}
+
+.topnav {
+  overflow: hidden;
+    background-color: white;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav a {
+  margin: 0em 1.5em;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav img:hover {
+  transform: rotate(30deg) scale(1.25);
+}
+
+.topnav img:focus {
+  transform: rotate(30deg) scale(1.25);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#bread {
+    width: 100px;
+    height: 100px;
+    transition: all 2s linear;
+}
+
+#bread:hover {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1em 1em .5em grey;
+  border-radius: 35px;
+}
+
+#bread:focus {
+  width: 400px;
+  height: 400px;
+  box-shadow: 1em 1em .5em grey;
+  border-radius: 35px;
+}
+
+#burger, #fish {
+    border-radius: 10%;
+}
+
+#burger {
+  animation-name: burger;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#fish {
+  animation-name: fish;
+  animation-duration: 5s;
+  animation-iteration-count: 4;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+footer {
+	  border-top: 1px solid #57b1dc;
+	  text-align: center;
+	  padding-top: 1em;
+}
+footer img {
+	width: 40px;
+	height: 40px;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+@keyframes burger {
+  0% {border-radius: 10%;}
+  100% {border-radius: 50%;}
+}
+@keyframes fish {
+  0% {border-radius: 10%;}
+  100% {border-radius: 50%;}
+}
