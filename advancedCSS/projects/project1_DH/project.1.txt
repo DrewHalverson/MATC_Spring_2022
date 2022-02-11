@@ -1,0 +1,18 @@
+Viewscreen size: 1000 x 384
+
+Initial performance results:
+    WiFi (30000 down, 15000 up, 2ms) - load time: 266ms, HTTP requests: 18
+    Slow 3G (780 down, 330 up, 200ms) - load time: 13.10s , HTTP requests: 18
+    Good 2G (450 down, 150 up, 150ms) - load time: 6.69s , HTTP requests: 18
+
+Final performance results:
+    WiFi (30000 down, 15000 up, 2ms) - load time: 256ms, HTTP requests: 20
+    Slow 3G (780 down, 330 up, 200ms) - load time: 9.83s , HTTP requests: 20
+    Good 2G (450 down, 150 up, 150ms) - load time: 3.34s , HTTP requests: 20
+
+
+Optimization reduce loading time in all three cases. For slower connections the 
+improvement was substantial. It is interesting that load time was reduced despite
+there being additional HTTP requests for the site. While the WiFi improvement was 
+not substantial, I think that optimization was worth it in this case due to a much 
+improved experience for users who are on slower connections. 

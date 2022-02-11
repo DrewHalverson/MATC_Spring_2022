@@ -1,0 +1,243 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*
+   Hotel Natoma style sheet
+   Filename: styles.css
+
+   Author:
+   Date:
+   
+   Modified by: Drew Halverson
+   Date: 2/11.2022
+ */
+
+/* reset styles */
+html {
+   font-size: 20px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1,
+h2, h3, img, li, nav, p, section, textarea, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+section {
+    padding: 0.25em 0em;
+}
+
+ul {
+   list-style-type: none;
+}
+
+/* body and page container */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+   position: relative;
+   border-top-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   left: auto;
+   right: 1em;
+   top: 1em;
+   background-color: white;
+   color: #082008;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   padding: 0.5em;
+   background-color: #082008;
+   border-top-left-radius: 22px;
+}
+h1 img {
+   margin: 0 auto;
+   display: block;
+   width: 368px;
+   height: 65px;
+}
+
+.img_extra {
+  width: 100%;
+  height: auto;
+}
+
+.img_extra img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* site navigation */
+nav.sitenavigation {
+   font-size: 1.25em;
+   padding: 2%;
+   background-color: #697b56;
+}
+nav.sitenavigation li {
+   margin: 0 1em;
+   padding: 0.2em;
+   display: block;
+}
+
+nav.sitenavigation a:link {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+nav.sitenavigation a:visited {
+   color: white;
+}
+.current {
+    background-color: #082008;
+    border-radius: 0.2em;
+}
+
+/* main content */
+article {
+   padding: 2%;
+   background-color: linen;
+   overflow: auto;
+}
+article h2 {
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.6em;
+   line-height: 2em;
+   font-weight: 400;
+   text-align: center;
+}
+article p {
+   margin: 0 2em 0.5em;
+}
+article p.pullquote {
+   margin: 0.5em 0.5em 0.4em;
+   font-size: 1.7em;
+   line-height: 1.4em;
+}
+article p.subhead {
+   margin-bottom: 1.6em;
+   text-align: center;
+}
+
+figure {
+	padding: 0.25em;
+}
+
+figure, figure img {
+   width: 100%;
+   height: auto;
+}
+
+figcaption {
+   text-align: center;
+   font-weight: bold;
+}
+article ul {
+   margin-left: 2em;
+}
+
+ul.no_bullet {
+    list-style-type: none;
+}
+
+li.art {
+    list-style-image: url("../images/art.png");
+}
+li.culture {
+    list-style-image: url("../images/culture.png");
+}
+li.kids {
+    list-style-image: url("../images/kids.png");
+}
+
+/* footer section */
+footer {
+   padding: 10px;
+   text-align: center;
+   color: white;
+   background-color: #082008;
+   border-bottom-right-radius: 22px;
+}
+
+footer div {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  padding: .5em;
+}
+
+@page {
+   margin: 0.75in;
+}
+
+
+@media screen and (min-width: 768px) {
+   nav {
+      text-align: center;
+   }
+   nav.sitenavigation li {
+      font-size: 1em;
+      display: inline;
+   }
+
+   nav.sitenavigation li :hover {
+      color: #343a40;
+      -webkit-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+   }
+   nav.sitenavigation li.current :hover {
+      color: white;
+   }
+   figure.img_extra {
+      float: right;
+      width: 35%;
+   }
+   footer div a:hover img {
+      -webkit-animation-name:spin;
+              animation-name:spin;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear; 
+      -webkit-animation-iteration-count: infinite; 
+              animation-iteration-count: infinite;
+   }
+   @-webkit-keyframes spin {
+      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+   }
+   @keyframes spin {
+      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+   }
+}
+
+@media print {
+   body {
+      margin: 1.5em;   
+   }
+   article, body, footer, .container {
+      color: black;
+      background-color: white;
+   }
+   nav {
+      display:none;
+   }
+}
