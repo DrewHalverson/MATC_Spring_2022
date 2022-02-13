@@ -1,0 +1,33 @@
+Assignment 2b - Drew Halverson
+
+2.23 - Define the terms functional dependency and determinant using an example not from this book.
+	
+		Functional dependency is a relationship between one attribute and another, such as between a primary key and other attributes in a table (Primary key -> attribute)
+
+		A determinate is an attribute that can be used to determine the value of other attributes. In the table ASSETS(ID, Make, Model, type), ID would be the determinate. 
+
+2.24 - In the following equation, name the functional dependency and identify the determinant(s): Area = Length * Width
+
+		Functional dependency = (Length, Width) -> Area
+		The determinate is (Length, Width)
+
+2.25 - Explain the meaning of the following expression: A -> (B, C)
+	
+		A determines the value of B and C
+	
+       Given this expression, tell if it is also true that: A -> B and: A -> C
+
+		These are both true
+
+2.26 - Explain the meaning of the following expression: (D, E) -> F
+
+		D and E together determine the value of F
+
+       Given this expression, tell if it is also true that: D -> F and: E -> F
+		
+		These are both false
+
+
+2.28 - Define the term primary key in terms of functional dependencies. 
+
+	The primary key is one or more attributes that determine all the rest of the attributes in a relation. 
