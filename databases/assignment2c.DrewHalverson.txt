@@ -1,0 +1,34 @@
+
+Consider a table named ORDER_ITEM, with data as shown in Figure 2-26. The schema for ORDER_ITEM is:
+ORDER_ITEM (OrderNumber, SKU, Quantity, Price)
+where SKU is a “Stock Keeping Unit” number, which is similar to a part number.
+Here it indicates which product was sold on each line of the table. 
+Note that one OrderNumber must have at least one SKU associated with it and may have several. 
+Use this table and the detailed discussion of normal forms on pages 99–100 to an-swer the following questions.
+
+A.  Define 1NF. Is ORDER_ITEM in 1NF? If not, why not, and what would have to be done to put it into 1NF? 
+    Make any changes necessary to put ORDER_ ITEM into 1NF. If this step requires you to create an additional table, 
+    make sure that the new table is also in 1NF.
+
+        1NF is a relation that has a defined primary key and no repeating groups. 
+        ORDER_ITEM is in 1NF. 
+
+B.  Define 2NF. Now that ORDER_ITEM is in 1NF, is it also in 2NF? If not, why not, and what would have to be done to 
+    put it into 2NF? Make any changes necessary to put ORDER_ITEM into 2NF. If this step requires you to create an 
+    additional table, make sure that the new table is also in 2NF.
+
+        2NF is a relation that is in 1NF and all nonkey attributes are determined entirely by the primary key. 
+        ORDER_ITEM is not in 2NF. 
+        To correct, we can create a relation (ORDER). 
+
+        So.. 
+        ORDER_ITEM(SKU (PK), Price)
+        ORDER(OrderNumber (PK), Quantity, SKU)
+
+C.  Define 3NF. Now that ORDER_ITEM is in 2NF, is it also in 3NF? If not, why not, and what would have to be done to 
+    put it into 3NF? Make any changes necessary to put ORDER_ITEM into 3NF. If this step requires you to create an 
+    additional table, make sure that the new table and any other tables created in previous steps are also in 3NF.
+
+    3NF is a relation that is in 2NF and there are no nonkey attributes that are determined by another nonkey attribute.
+
+    ORDER_ITEM and ORDER are in 3NF. 
