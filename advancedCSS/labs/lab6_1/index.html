@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lab 6.1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- Sidebar/menu -->
+<header>
+    <h1>Advanced CSS Lab 6.1</h1>
+    <nav id="mySidebar">
+        <a href="#">Shirts</a>
+        <a href="#">Dresses</a>
+        <a href="#" id="myBtn">Jeans</a>
+        <a href="#">Jackets</a>
+        <a href="#">Sweaters</a>
+        <a href="#footer">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#footer">Subscribe</a>
+    </nav>
+</header>
+
+<main>
+  <!-- Top header -->
+  <section>
+      <h2>Jeans</h2>
+      <div>
+          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-search"></i>
+      </div>
+
+  <!-- Image header -->
+    <article id="product_splash">
+        <img src="images/jeans.jpg" alt="Jeans" >
+        <div>
+            <h3>New arrivals</h3>
+            <p id="subtitle1">New arrivals</p>
+            <p id="subtitle2">COLLECTION 2020</p>
+        </div>
+    </article>
+
+    <article id="jeans">
+        <h3>8 items</h3>
+
+        <div class="item">
+            <img src="images/jeans1.jpg" alt="jeans">
+            <p>Ripped Skinny Jeans</p>
+            <p><span class="price">$24.99</span></p>
+        </div>
+
+        <div class="item">
+            <img src="images/jeans3.jpg" alt="jeans">
+            <p>Washed Skinny Jeans</p>
+            <p><span class="price">$20.50</span></p>
+        </div>
+
+        <div class="item">
+            <img src="images/jeans2.jpg" alt="jeans">
+            <p>Mega Ripped Jeans - <span id="best">Top Seller</span></p>
+            <p><span class="price">$19.99</span></p>
+        </div>
+
+        <div class="item">
+            <img src="images/jeans4.jpg" alt="jeans">
+            <p>Vintage Skinny Jeans</p>
+            <p><span class="price">$14.99</span></p>
+        </div>
+
+        <div class="item">
+          <img src="images/jeans2.jpg" alt="jeans">
+          <p>Mega Ripped Jeans</p>
+          <p><span class="price">$19.99</span></p>
+        </div>
+
+        <div class="item">
+            <img src="images/jeans1.jpg" alt="jeans">
+            <p>Ripped Skinny Jeans</p>
+            <p><span class="price">$24.99</span></p>
+        </div>
+
+        <div class="item">
+            <img src="images/jeans3.jpg" alt="jeans">
+            <p>Washed Skinny Jeans</p>
+            <p><span class="price">$20.50</span></p>
+        </div>
+
+        <div class="item">
+            <img src="images/jeans4.jpg" alt="jeans">
+            <p>Vintage Skinny Jeans</p>
+            <p><span class="price">$14.99</span></p>
+        </div>
+  </article>
+
+  <!-- Subscribe section -->
+  <article id="subscribe" class="reverse">
+      <h2>Subscribe</h2>
+      <p>To get special offers and VIP treatment:</p>
+      <p><input type="text" placeholder="Enter e-mail" id="email_input" aria-label="Subscribe Email"></p>
+      <button>Subscribe</button>
+  </article>
+</section>
+
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+    <!-- Contact -->
+        <h3>Contact</h3>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input type="text" placeholder="Name" name="Name" aria-label="Name" required></p>
+          <p><input type="text" placeholder="Email" name="Email" aria-label="Email" required></p>
+          <p><input type="text" placeholder="Subject" name="Subject" aria-label="Subject" required></p>
+          <p><input type="text" placeholder="Message" name="Message" aria-label="Message" required></p>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <!-- About -->
+      <div id="about">
+        <h4>About</h4>
+        <div><a href="#">About us</a></div>
+        <div><a href="#">We're hiring</a></div>
+        <div><a href="#">Support</a></div>
+        <div><a href="#">Find store</a></div>
+        <div><a href="#">Shipment</a></div>
+        <div><a href="#">Payment</a></div>
+        <div><a href="#">Gift card</a></div>
+        <div><a href="#">Return</a></div>
+        <div><a href="#">Help</a></div>
+      </div>
+
+      <div>
+      <!-- Store -->
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+
+        <i class="fa fa-facebook-official icon_size"></i>
+        <i class="fa fa-instagram icon_size"></i>
+        <i class="fa fa-snapchat icon_size"></i>
+        <i class="fa fa-pinterest-p icon_size"></i>
+        <i class="fa fa-twitter icon_size"></i>
+        <i class="fa fa-linkedin icon_size"></i>
+      </div>
+
+      <address class="reverse">Contact Us at <a href="mailto:webmaster@example.com" title="Adv CSS" target="_blank">StudentName@madisoncollege.edu</a></address>
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+Assignment 3b
+Drew Halverson
+
+3.15 - Write an SQL statement to display all columns of all rows of PET. Do not use the asterisk (*) notation.
+            SELECT PetID, PetName, PetType, PetBreed, PetDOB, OwnerID 
+            FROM PET;
+
+3.16 - Write an SQL statement to display all columns of all rows of PET. Use the asterisk (*) notation.
+            SELECT * 
+            FROM PET;
+
+3.17 - Write an SQL statement to display the breed and type of all pets.
+            SELECT PetBreed, PetType 
+            FROM PET;
+
+3.18 - Write and SQL statement to display the breed, type, and DOB of all pets having the type Dog
+            SELECT Petbreed, PetType, PetDOB 
+            FROM PET 
+            WHERE PetType = 'dog';
+
+3.21 - Write and SQL statement to display the breed, type, and DOB of all pets having the type Dog and the breed Std. Poodle.
+            SELECT Petbreed, PetType, PetDOB 
+            FROM PET 
+            WHERE PetType = 'dog' AND PetBreed = 'Std. Poodle';
+
+3.24 -  Write an SQL statement to display the last name, first name, and email of all owners who have an email address ending with 
+        somewhere.com. Assume that email account names can be any number of characters. Note that the RTRIM function will be needed 
+        in the solution that uses the CHAR column, but not for the one that uses the VARCHAR column. 
+            SELECT OwnerLastName, OwnerFirstName, OwnerEmail 
+            FROM PET_OWNER 
+            WHERE OwnerEmail LIKE '%somewhere.com';
+
+3.26 - Write an SQL statement to display the name and breed of all pets, sorted by pet name. 
+            SELECT PetName, PetBreed
+            FROM PET 
+            ORDER BY PetName;
+
+
+3.28 - Write an SQL statement to count the number of distinct breeds.
+            SELECT COUNT (PetID)
+            FROM PET;

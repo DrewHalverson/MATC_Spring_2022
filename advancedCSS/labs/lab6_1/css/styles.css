@@ -1,0 +1,229 @@
+/*
+  	student name
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+	letter-spacing: 4px;
+	font-weight: bolder;
+}
+
+body {
+	margin: .5em;
+	background-image: url('../images/checker_pattern.jpg');
+}
+
+html, body {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+h1 {
+	padding: 0 .5em;
+	letter-spacing: 4px;
+	font-weight: 400;
+	margin: 10px .5em;
+	font-size: 32px;
+}
+
+h2 {
+	padding: 0 .35em;
+	font-size:  1.8em;
+}
+
+h3 {
+	font-size:  1.6em;
+}
+
+h4 {
+	font-size:  1.4em;
+}
+
+#mySidebar {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#mySidebar a {
+	display: block;
+	padding: 8px 16px;
+	text-align: left;
+	border: none;
+	white-space: normal;
+	float: none;
+	outline: 0;
+	text-decoration: none;
+	color: #757575;
+	flex-grow: ;
+}
+
+#mySidebar a:hover, #mySidebar #myBtn:hover {
+  background-color: #dddddd;
+  color: black;
+	text-shadow: 2px 2px 5px red;
+}
+
+#mySidebar a:link, #mySidebar a:visited, #mySidebar a:active {
+  color: #757575;
+}
+
+#mySidebar #myBtn:link, #mySidebar #myBtn:visited, #mySidebar #myBtn:active {
+	color: black;
+	background-color: #ffffff;
+}
+
+#product_splash {
+	padding: 24px 48px;
+	color: #ffffff;
+}
+
+#product_splash div {
+	padding: 24px 48px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#product_splash h3 {
+	font-size: 6em;
+	padding: 0.01em 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	letter-spacing: 4px;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+#subtitle1, #subtitle2 {
+	font-family: "Montserrat", sans-serif;
+  padding: .15em .75em;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 3.5em;
+}
+
+#jeans {
+	color: #757575;
+	padding: 0.01em 16px;
+}
+
+#subscribe {
+	padding: 0.01em 16px;
+}
+
+article {
+	filter: grayscale(75%);
+}
+
+.price {
+	font-weight: bold;
+}
+
+.item {
+	width: 20%;
+	height: auto;
+}
+.item p {
+	margin: 0.25em 0em;
+}
+
+#best {
+	color: red;
+	font-variant-caps: small-caps;
+	font-family:serif;
+}
+
+.reverse {
+	color: #ffffff;
+	background-color: #000000;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+div a {
+		text-decoration: none;
+		color: #757575;
+}
+
+div a:hover {
+  background-color: #dddddd;
+  color: black;
+	text-shadow: 2px 2px 5px red;
+}
+
+div a:link, div a:visited, div a:active {
+  color: #757575;
+}
+
+form {
+	margin: 4px 12px;
+}
+
+input {
+	border: 1px solid #cccccc;
+	width: 100%;
+	padding: 8px;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+
+button {
+	border: none;
+	color: #ffffff;
+	background-color: #840a01;
+	display: inline-block;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	margin-bottom: 16px;
+}
+
+img, #email_input {
+	width: 100%;
+}
+
+address {
+	padding: 8px;
+	margin-top: 1em;
+}
+
+footer a {
+		text-decoration: none;
+}
+
+address a:link, address a:visited, address a:hover, address a:active {
+  color: lightblue;
+}
+
+
+footer a:hover {
+  color: grey;
+}
+
+footer {
+		color: #000000;
+    background-color: #f1f1f1;
+		padding-top: 64px;
+    padding-bottom: 64px;
+		text-align: center;
+		font-size: 12px;
+}
+.icon_size {
+		font-size: 18px;
+}
