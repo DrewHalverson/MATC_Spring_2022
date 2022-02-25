@@ -124,9 +124,13 @@ const init = () => {
     // clean up variables and perform calculations for total deductions and net pay
     stateTax = stateTax.toFixed(2);
     medicare = medicare.toFixed(2);
+    fedTax = fedTax.toFixed(2);
+    socialSecurity = socialSecurity.toFixed(2);
     totalDeduction = parseInt(fedTax) + parseInt(stateTax) + 
             parseInt(socialSecurity) + parseInt(medicare);
+    totalDeduction = totalDeduction.toFixed(2);
     netPay = parseInt(salary) - parseInt(totalDeduction);
+    netPay = netPay.toFixed(2);
 
     //Create and output table with tax and salary data
 
