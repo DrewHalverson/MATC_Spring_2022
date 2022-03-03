@@ -1,0 +1,43 @@
+
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+    background: #333;
+  }
+  body {
+    margin: 0;
+  }
+  header, main, aside, footer {
+    padding: 2em;
+  }
+  header {
+    background: lightgrey;
+  }
+
+  aside {
+    background: aliceblue;
+  }
+
+  li {
+      list-style: none;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly ;
+  }
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #333;
+}

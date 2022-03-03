@@ -1,0 +1,23 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em;
+}
+
+img {
+    padding: 0.25em;
+}
+
+hr {
+    border-top: 1px dotted ;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+#tempGroup {
+    display: flex;
+}
+
+#windGroup {
+    display: flex;
+}
