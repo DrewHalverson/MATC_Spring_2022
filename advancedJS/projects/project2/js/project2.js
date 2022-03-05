@@ -1,16 +1,23 @@
+// Project 2 - Advanced JavaScript - APIs & Asynchronous Events 
+// author: Drew Halverson
+// 03/05/2022
+
 // this function listens for a click event on the getWeather button and calls 
 // the getLocation function when it detects it. 
 const init = () => {
     
     let weatherButton = document.querySelector("#getWeather"); 
-    weatherButton.addEventListener("click", clearData);
+    weatherButton.addEventListener("click", getLocation);
 }
 
 // this function retrieves weather data from geonames.org based on location data
-// form the getLocation function
-const getWeather = (latitude, longitude) => {
+// from the getLocation function
+const getWeather = (latitude, longitude, placeName) => {
+
+    // define URL for data retrieval with paramerters from getLocation
     let url = "http://api.geonames.org/findNearByWeatherJSON?lat=" + latitude +
              "&lng=" + longitude + "&username=drewhalverson";
+
     let xhr = new XMLHttpRequest();
 
     xhr.open("get", url);
@@ -21,7 +28,7 @@ const getWeather = (latitude, longitude) => {
             let temperaturecelsius = weatherData.weatherObservation.temperature;
             let windSpeed = weatherData.weatherObservation.windSpeed;
 
-            // declare temperature variable and convert data from Celsius to Farenheit
+            // declare temperature variable and convert data from C to F
             let temperature = temperaturecelsius * 9 / 5 + 32;
             temperature = temperature.toFixed(0);
 
@@ -32,10 +39,14 @@ const getWeather = (latitude, longitude) => {
             let windDiv = document.createElement("div");
             windDiv.setAttribute("id", "windGroup");
 
+            // create header for place name
+            let placeNameHeader = document.createElement("h2");
+            placeNameHeader.innerHTML = placeName;
+
             // create paragraph element for temperature data
             let tempText = document.createElement("p");
             tempText.innerHTML = "The temperature is: " +temperature +
-                     " degrees Farenheit.";
+                     " °F";
 
             // create paragraph element for wind speed data
             let windText = document.createElement("p");
@@ -44,9 +55,10 @@ const getWeather = (latitude, longitude) => {
  
             // test for temperature and output appropriate data
             if (temperature < 34) {
+
                 // create img element for cold temps
                 let coldImage = document.createElement("img");
-                coldImage.setAttribute("src", "images/cold-temperature-icon.png");
+                coldImage.setAttribute("src", "images/cold-temp-icon.png");
                 coldImage.setAttribute("alt", "cold icon");
                 coldImage.setAttribute("width", "50");
                 coldImage.setAttribute("height", "50");
@@ -57,9 +69,10 @@ const getWeather = (latitude, longitude) => {
                 //document.body.appendChild(tempDiv);
 
             } else if(temperature > 83) {
+
                 // create img element for hot temp
                 let hotImage = document.createElement("img");
-                hotImage.setAttribute("src", "images/hot-temperature-icon.png");
+                hotImage.setAttribute("src", "images/hot-temp-icon.png");
                 hotImage.setAttribute("alt", "hot icon");
                 hotImage.setAttribute("width", "50");
                 hotImage.setAttribute("height", "50");
@@ -70,16 +83,16 @@ const getWeather = (latitude, longitude) => {
                // document.body.appendChild(tempDiv);
               
             } else {
+
                 // output data if neither hot or cold are triggered
                 tempDiv.appendChild(tempText);
-               // document..appendChild(tempDiv);
             }
 
             // test for wind speed and output appropriate data
             if (windSpeed > 15) {
                 let windImage = document.createElement("img");
                 windImage.setAttribute("src", "images/high-wind-icon.png");
-                windImage.setAttribute("alt", "hot icon");
+                windImage.setAttribute("alt", "wind icon");
                 windImage.setAttribute("width", "50");
                 windImage.setAttribute("height", "50");
 
@@ -89,20 +102,37 @@ const getWeather = (latitude, longitude) => {
                 windDiv.appendChild(windText);
             }
 
-            document.body.appendChild(tempDiv);
-            document.body.appendChild(windDiv);
+            //Write data to main element in HTML
+            document.getElementById("mainContent").appendChild(placeNameHeader);
+            document.getElementById("mainContent").appendChild(tempDiv);
+            document.getElementById("mainContent").appendChild(windDiv);
 
         }
     }
 
     xhr.send(null);
+
+    // clear form entry
+    document.getElementById("weatherForm").reset();
 }
 
 
 // this function retrieves location data from geonames.org based on a zip code
 const getLocation = () => {
-    let url = "http://api.geonames.org/postalCodeSearchJSON?" +
-            "username=drewhalverson&postalcode=53593&country=US";
+
+    // clear DOM data from previous activity
+    document.getElementById("mainContent").innerHTML = "";
+
+    // this grabs the zip code value from the html form. 
+    let zipCode = document.querySelector("#zipCode").value;
+
+    //declare geonames user name
+    let userName = "drewhalverson";
+
+    // create URL from user name and zip code data
+    let url = "http://api.geonames.org/postalCodeSearchJSON?username=" + 
+            userName + "&postalcode=" + zipCode + "&country=US";
+
     let xhr = new XMLHttpRequest();
 
     xhr.open("get", url);
@@ -112,11 +142,12 @@ const getLocation = () => {
             let locationData = JSON.parse(xhr.responseText);
             let latitude = locationData.postalCodes[0].lat;
             let longitude = locationData.postalCodes[0].lng;
+            let placeName = locationData.postalCodes[0].placeName + ", " +
+                    locationData.postalCodes[0].adminName1;
 
-            getWeather(latitude, longitude);
+            getWeather(latitude, longitude, placeName);
         }
     }
-
 
     xhr.send(null);
 }
