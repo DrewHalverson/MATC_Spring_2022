@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Lab 8.1 Flexbox and RWD Hiding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="MATC"></a></div>
+        <h1>Lab 8.1 Working with Flexbox and RWD Hiding</h1>
+    </header>
+<div class="subContainer">
+    <nav>
+        <h3>Lab Resources</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">W3Schools CSS Layout - The display Property</a></li>
+            <li><a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">W3Schools CSS Layout - The visibility Property</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">MDN display</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/visibility" target="_blank">MDN visibility</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Flexbox Layout</h2>
+        <div id="splash_image">
+            <a href="https://it.madisoncollege.edu/" target="_blank"><img src="images/madison_college_heb.jpg" alt="Madison College Health and Information Technology Building"></a>
+        </div>
+        <article>
+            <h3>Basic lab Information</h3>
+            <p>For this lab you will be incorporating flexbox into a basic web page.  <em>Refer to the Lab 8.1 specifications for complete lab requirements.</em></p>
+
+            <p>You may want to consider using Firefox for this lab as it has some very nice developer tools for working with Flexbox.</p>
+
+            <p>Creating the flexbox container is the first step in incorporating any flexbox layout. After defining the container, you will need to define the flex item properties.</p>
+
+            <ul>
+                <li>For the default viewport (under 768px), the overall container will have 4 rows and 1 columns
+                    <ul>
+                        <li>Navigation section will have a width of 100% of the viewport</li>
+                        <li>Main section will have a width of 100% of the viewport</li>
+                        <li>Aside section will be hidden</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>For viewports 768px and greater, the overall container will still have 4 rows and 1 columns. However, a nested container should be created for the nav, main, and aside.
+                    <ul>
+                        <li>Navigation section will have a width of 20% of the viewport container</li>
+                        <li>Aside section will displayed (formerly hidden) and have a width of 15% of the viewport container</li>
+                        <li>Main section should automatically use any remaining space within the row</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </article>
+    </main>
+
+    <aside>
+        <h3>Registration Links</h3>
+        <ul>
+            <li><a href="https://madisoncollege.edu/registration-calendar" target="_blank">Registration Calendar</a></li>
+            <li><a href="https://madisoncollege.edu/registration-guides" target="_blank">Enrollment Dates</a></li>
+            <li><a href="https://madisoncollege.edu/degree-progress-report" target="_blank">Degree Progress Report</a></li>
+            <li><a href="https://my.madisoncollege.edu/app/profile/login" target="_blank">myMadisonCollege</a></li>
+            <li><a href="https://it.madisoncollege.edu/programs.html" target="_blank">IT Programs</a></li>
+        </ul>
+    </aside>
+</div>
+    <footer>
+        <h3>Lab 8.1 - Your Name</h3>
+        <p>Working with Flexbox and hiding information puts additional tools in your website development kit!</p>
+    </footer>
+</div>
+</body>
+</html>
