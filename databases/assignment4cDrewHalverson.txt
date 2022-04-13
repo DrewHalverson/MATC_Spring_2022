@@ -1,0 +1,27 @@
+What is the primary key field of the customer table?
+    CustomerID
+
+What is the primary key field of the order table?
+    OrderID
+
+How many records are in the customer table?
+    Five. Unless you are a fan of Joe Celko, in which case there 
+    are none. Only five rows. =]
+
+How many records are in the order table?
+    Six. Or see the previous question. 
+
+What is the relationship between the customer and order tables?
+    Each customer can have amny orders, but an order can only 
+    have one customer. 
+
+Is there a foreign key in the customer table? If so, what is it?
+    There is not a foreign key.
+
+Is there a foreign key in the order table? If so, what is it?
+    Yes. CustomerID is the foreign key. 
+
+How many fields/columns are in the customer table? Order table?
+    There are three columns in each table. 
+
+

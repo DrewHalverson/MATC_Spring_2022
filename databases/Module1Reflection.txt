@@ -1,0 +1,23 @@
+1)  With regards to Project 1, would you have been able to complete 
+    Project 1 prior to starting this course?
+
+    I think so, with some assistance from Google. I have worked with SQL quite a bit before I started the class and a lot of the concepts were familiar.
+
+2)  Now that you have completed Project 1, what did you find most 
+    satisfying about the process or the finished database product?
+
+    Completing the project was satisfying. It was nice to see everything working as it should be. 
+
+
+3)  Now that you have completed Project 1, what did you find most 
+    frustrating about it?
+
+    I don't like Access. Some of that is due to old biases from 
+    having had to work with it more than a decade ago, but I am 
+    more comfortable working with something like MySQL from a terminal.
+
+4)  Now that you have completed Module 1, what, if anything, would 
+    you change about your approach to the weekly classwork as you 
+    progress through Modules 2 and 3?
+
+    I am happy with how I approached the course work. 

@@ -1,0 +1,24 @@
+Screen Reader Assignemnt
+UI/UX OLL M/W 12:30
+Drew Halverson
+
+What screen reader did you use, and what local news station did you pick?
+NVDA. NBC15.com
+
+Did you find the national or local website easier to navigate? Why?
+I thought they were very similar. I was able to sort out navigation quickly for both sites. 
+
+What surprised you the most about using a screen reader? What was the most challenging aspect for you?
+It seemed chaotic. I am used to navigating very quickly without a screen reader and trying to do the same with the 
+screen reader made for a lot of jumbled audio / word salad. 
+
+On your website you tested, what do you think could be improved upon in terms of the screen reader experience?
+I tested on my blog and I am not sure anything could be improved. It is a minimalist text only installation of Jekyll on GitHub pages and 
+the screen reader had no issues navigating it.
+
+What issues did you face that you think would improve with more practice using a screen reader?
+
+There is definitely a learning curve. It seemed very clunky and slow to me but I have a friend with vision impairment who used a screen reader and 
+they fly through things as fast as I do with visual navigation. 
+
+ 

@@ -1,0 +1,27 @@
+/*  Lab 11.1 Starting CSS */
+
+body {
+	color: #000000;
+	background-color: lightyellow;
+	font-family: Calibri, Arial, sans-serif;
+}
+
+header, footer {
+    padding: 1em 1em;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+main {
+   padding: .5em .25em;
+}
+
+section {
+    padding: .5em;
+    border: 1px solid black;
+}
+
+.container-fluid {
+    background-color: #e6fbed;
+}

@@ -1,0 +1,21 @@
+Assignment 5b
+Drew Halverson
+
+Three Take Aways:
+
+	1. NoSQL platforms are easier to get started with but relational databases work better when you need to understand the data model as a new
+	developer. 
+	
+	2. The choice of which database platform is best depends on how you want to store data, how you plan to access that stored data, and how 
+	important performance, durability, accessibility, and consistency are to the project. 
+
+	3. Scalability is not about SQL vs. NoSQL systems, it is about simple vs. complex application queries. 
+
+Three Questions:
+
+	1. At what point is it important to start worrying about scalability? Is it something to be concerned about in any situation?
+
+	2. What does precomputing look like in practice? Whate are some of the technologies used to implement it?
+	
+	3. How do you determine which is the best option to choosed for ways to scale?
+

@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c1f9c6;
+    color: black;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    margin: 0 0;
+    padding: 0 1em 0 1em;
+}
+
+.mainFlexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    margin: 0;
+    padding: 0 0.75em 0 0.75em;
+}
+
+.brand {
+    color: gold;
+    background-color: transparent;
+    font-size: 1.25rem;
+}
+
+header {
+    background-image: url("../images/gp_back1.png");
+    background-size: auto;
+}
+
+.homePageMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    background-color: white;
+    color: black;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em 0.5em 1em;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+nav {
+    background-color: #343a40;
+    color: rgba(255,255,255,.5);
+}
+
+nav a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0.5em;
+    transition: 0.5s ease;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #343a40;
+}
+
+form {
+    margin: 1em;
+    display: table;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.formItem {
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+#writers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.flexLeft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.flexLeft :nth-child(8){order: -1;}
+
+.flexRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.flexRight :nth-child(15) {order: -1;}
+
+#gpPanel01 {
+    width: 100%;
+    height: auto;
+}
+
+/* #gpNext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#sneakPeakImages {
+    display: flex;
+    background-color: lightgray;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sneakPeakImages img {
+    border: 2px solid gray;
+    padding: 2px;
+}
+
+#submit {
+    background-color: green;
+    color: white;
+    margin: 0.35em;
+    
+}
+
+#reset {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+footer {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    padding: 0.1em;
+}
+
+#writers {
+    font-size: 1.2em;
+    list-style: none;
+}
+
+@media screen and (min-width: 768px){
+
+    .mainFlexContainer {
+        padding-left:1.25em;
+        padding-right: 1.25em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li a {
+        margin: 0.5em 0.55em 0.5em 0.55em;
+    }
+
+    #indexFlex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #gpPanel01 {
+        flex-basis: 60%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+     #gpNext {
+        flex-basis: 5%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        align-items: center;
+    }
+
+    #indexFlex article {
+        flex-basis: 35%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    #sneakPeakImages {
+        display: flex;
+        background-color: lightgray;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sneakPeakImages img:hover {
+        transform: scale(1.2);
+        transition: ease 0.3s ;
+    }
+}
+
+@media print {
+    .noPrint {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+Assignment 5a
+Drew Halverson
+
+
+	Three Take Aways:
+	
+	1. The database design process is critical to building a functional and efficient database. 
+
+	2. Following guidelines for proper database creation makes for a smoother and more functional end product. 
+	
+	3. As with most things, balance is important. Sometimes things can be over-normalized. Sometimes it makes the 
+	most sense to be consistent with a bad naming convention to maintain integrity. 
+
+	
+	Three Questions:
+	
+	1. What's the best way to determine where a balance point is? The section of the article about non-DB folks 	
+	viewing normalization as over engineering comes to mind. 
+
+	2. What are best practices for adequate database testing? Is there a percentage of data, a guideline for types of 
+	edge cases, etc?
+
+	3. What are best practices for assigning data types? Sometimes it seems pretty arbitrary and ambiguous which 		types need to be assigned. 

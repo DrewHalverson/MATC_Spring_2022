@@ -1,0 +1,14 @@
+{
+  "name": "dynamo",
+  "version": "1.0.0",
+  "description": "1st node application connecting to dynamo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drew Halverson",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1103.0"
+  }
+}

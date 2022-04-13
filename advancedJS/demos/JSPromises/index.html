@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises, Promises</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Promise structure
+        // let myPromise = new Promise((resolve, reject) => {
+        //     resolve() or reject();
+        // })
+async function getLatAndLng(zipCode) {
+        const username = "drewhalverson";
+        const country = "US";
+        let url = `http://api.geonames.org/postalCodeSearchJSON?username=${username}&postalcode=${zipCode}&country=${country}`;
+
+        let zipCodePromise = fetch(url);
+
+        let coordinateResults = await zipCodePromise.then(zipSearchResults => {
+            return zipSearchResults.json();     
+        })
+        .then(jsonZipSearchResults => {
+            //console.log(jsonZipSearchResults);
+            return {"lat": jsonZipSearchResults.postalCodes[0].lat, "lng": jsonZipSearchResults.postalCodes[0].lng};
+        })
+       .then(latAndLngResults => {
+            //console.log(latAndLngResults);
+        }).catch(error => {
+            console.error(error);
+        });
+
+        return coordinateResults;
+    }
+
+    console.log(getLatAndLng("53593"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+3.38 -  Write an SQL statement to display the last name, first name, and email 
+        of any owners of cats.Use a join using JOIN ON syntax. What are the 
+        consequences of using (or not using) the DISTINCT keyword in this version 
+        of the query?
+
+SELECT OwnerFirstName, OwnerLastName, OwnerEmail FROM PET_OWNER JOIN PET ON 
+PET_OWNER.OwnerID = PET.OwnerID WHERE PetType = 'Cat';
+
+The DISTINCT keyword will return unique values if used. If not, duplicates will 
+be returned. 
+
+
+3.46 -  Write an SQL statement to delete all rows of pets of type Anteater. What 
+        will happen if you forget to code the WHERE clause in this statement?
+
+DELETE FROM PET_3 WHERE PetBreed = 'Anteater';
+
+Leaving out the WHERE clause will delete all of the rows in the table. 
+
+
+3.47 -  Write an SQL statement to add a PetWeight column like the one in PET_3 
+        to the PET table, given that this column is NULL. Again, assume that 
+        PetWeight is Numeric(4,1).
+
+ALTER TABLE PET ADD PetWeight NUMERIC(4,1) NULL;
+
+
+3.48 -  Write SQL statements to insert data into the PetWeight column you created
+        in question 3.47. Use the PetWeight data from PET_3 table as shown in
+        Figure 3-28.
+
+INSERT INTO PET (PetWeight)SELECT PetWeight FROM PET_3;
+
+
