@@ -14,7 +14,7 @@ const init = () => {
 // from the getLocation function
 const getWeather = (latitude, longitude, placeName) => {
 
-    // define URL for data retrieval with paramerters from getLocation
+    // define URL for data retrieval with parameters from getLocation
     let url = "http://api.geonames.org/findNearByWeatherJSON?lat=" + latitude +
              "&lng=" + longitude + "&username=drewhalverson";
 
@@ -25,6 +25,7 @@ const getWeather = (latitude, longitude, placeName) => {
     xhr.onreadystatechange = () => {
         if(xhr.readyState == 4) {
             let weatherData = JSON.parse(xhr.responseText);
+            console.log(weatherData);
             let temperaturecelsius = weatherData.weatherObservation.temperature;
             let windSpeed = weatherData.weatherObservation.windSpeed;
 
