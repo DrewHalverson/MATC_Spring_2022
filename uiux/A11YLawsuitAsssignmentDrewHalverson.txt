@@ -1,0 +1,30 @@
+Court finds Domino’s Pizza Violated the ADA by Having an Inaccessible Website and Orders WCAG Compliance
+
+https://www.jdsupra.com/legalnews/court-finds-domino-s-pizza-violated-the-2182635/
+
+Questions:
+
+What accessibility violation caused the lawsuit?
+
+	It was impossible to place an order on Domino's website using a screen reader. 
+
+Did the company take any steps to resolve the accessibility issue?
+
+	Not until they were court ordered to do so. 
+
+What is your opinion on the lawsuit? Was it justified? Why or why not.
+
+	I think it was justified. Domino's used unfounded arguments to defend against the lawsuit (They didn't own the physical stores 	where items were purchased and the ADA does not cover web- only businesses). 
+
+If there was a resolution, do you feel it was fair? 
+
+	There was a resolution. I don't think it was fair. The plaintiff recieved $4000 and attorney costs. This is not a level
+	of compensation that is going to motivate a corporation to be ADA compliant. 
+
+If there was not a resolution, what actions do you believe should be taken?
+
+	N/A 
+
+Do you think anything particular could have prevented this lawsuit from taking place?
+
+	Domino's could have built an accessible site to begin with. They could also have attempted to correct the issues once it was 		brought to their attention instead of doubling down on their error. 

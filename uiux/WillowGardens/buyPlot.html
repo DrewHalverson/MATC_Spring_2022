@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Buy a Plot</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buyPlot.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=buyPlot.html>Apply for a plot</a></li>
+            <li><a href="gardeningTips.html">Gardening Tips</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>Thank you for your interest in Willow Gardens!</h2>
+    <h4>Please submit the below form to request your garden plot.</h4>
+
+
+    <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+
+        <h4>Are you interested in a starer seed pack?</h4>
+
+        <input type="radio" name="seeds" id="yesSeeds" value="Y">
+        <label for="yesSeeds">Yes</label>
+
+        <input type="radio" name="seeds" id="noSeeds" value="N">
+        <label for="noSeeds">No</label>
+
+        <br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" required id="firstName">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" required id="lastName">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required id="email">
+
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone">
+
+        <label for="plotNumber">Number of plots:</label>
+        <select name="numberOfPlots" id="plotNumber">
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+            <option value="04">4</option>
+        </select>
+
+        <h4>Join a Garden Team!</h4>
+        <p>Teams are a great way to get to know other gardeners and volunteer on your own schedule. Check the box for each team you are interested in!</p>
+
+        <input type="checkbox" name="mentor" id="mentor" value="mentor">
+        <label for="mentor">New Garden Mentor</label>
+
+        <input type="checkbox" name="plot" id="plot" value="maintenance">
+        <label for="plot">Plot Maintenance </label>
+
+        <input type="checkbox" name="water" id="water" value="water">
+        <label for="water">Water Maintenance </label>
+
+        <input type="checkbox" name="equipment" id="equipment" value="equi">
+        <label for="equipment">Equipment Maintenance </label>
+
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+    <h4>General Plot Information</h4>
+
+    <p>Our garden plots measure approximately 20' x 20' (400 sq.ft.). The maximum number of plots per gardener is 4 plots. Only organic gardening methods are allowed. We do not till any sections of our gardens, which allows gardeners to plant perennials such as asparagus and strawberries and leave up fences, if desired, throughout the year.</p>
+
+    <p>$15, $43, or $78 per plot/year, depending on your income level and size of household/garden family.</p>
+
+    <p>Water is provided on site throughout the season. Garden tools are available for everyone to use. Free wood chips are provided gardener use. We offer hay and row cover for sale on our application.</p>
+
+</body>
+
+</html>

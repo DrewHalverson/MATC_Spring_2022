@@ -1,0 +1,54 @@
+/*******************************
+  Main stylesheet - all pages
+*******************************/
+
+html, body {
+  height: 100%;
+  background-color: darkolivegreen;
+}
+
+/*******************************
+  Navigation
+*******************************/
+nav {
+  background-color: darkseagreen;
+  padding: 1em 0;
+  border: 5px groove deeppink;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0 2em;
+  border: 1px solid hotpink;
+  padding: 1em;
+  background-color: lavenderblush;
+}
+
+/*******************************
+  Links
+*******************************/
+a:link {
+    color: darkseagreen;
+}
+a:visited {
+    color: deeppink;
+}
+a:hover {
+    color: hotpink;
+}
+
+/*******************************
+  Headings
+*******************************/
+h1, h2 {
+  color: deeppink;
+}
+
+h3, h4 {
+  color: hotpink;
+}

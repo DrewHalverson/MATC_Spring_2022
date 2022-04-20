@@ -1,0 +1,19 @@
+
+/*******************************
+  Buy A Plot Styles
+*******************************/
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #2B2A16;
+  padding: 2em;
+  color: #fff;
+}
+input {
+    display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+}
