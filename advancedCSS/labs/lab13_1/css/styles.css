@@ -1,0 +1,12 @@
+/*  styles.css
+    Lab 14.1
+*/
+
+body {
+  	font-family: Calibri, Arial, sans-serif;
+    background-color: #e9eef5;
+}
+
+header, footer {
+    background-color: #1e3160;
+}

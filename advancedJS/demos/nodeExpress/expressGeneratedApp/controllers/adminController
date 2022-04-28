@@ -1,0 +1,7 @@
+exports.homePage = (req,res) => {
+    res.render('admin', {'title': 'Admin Home Page'});
+}
+
+exports.add = (req, res) => {
+    res.send('adding.....');
+}

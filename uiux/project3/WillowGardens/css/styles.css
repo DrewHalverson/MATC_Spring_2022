@@ -1,0 +1,150 @@
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    background-color: #dce1de ;
+}
+
+header {
+    background-color: #49A078;
+}
+
+/*******************************
+  Navigation
+*******************************/
+.topNav {
+    background-color: #1f2421;
+}
+
+.topNav ul {
+    list-style: none;
+    text-align: center;
+    padding: 1em;
+}
+
+.topNav ul li {
+    display: inline;
+    text-align: center;
+    margin: 1em;
+}
+
+/*******************************
+  Links
+*******************************/
+a {
+    text-decoration: none;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: #9cc5a1;
+}
+a:hover {
+    color: red;
+}
+
+a.currentPage{
+    border-bottom: 5px solid  red;
+}
+
+a.callToAction {
+    color: white;
+    text-align: center;
+}
+
+a.contentLink {
+  color: Blue;
+}
+
+.ctaContainer{
+  text-align: center;
+  padding: 1em;
+  background-color: #A62700;
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 5px;
+}
+
+.contactLink {
+  display:block;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/*******************************
+  Images
+*******************************/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .5em;
+    box-shadow: #49A078 10px 10px 5px; 
+    
+}
+  .centerLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  /*******************************
+  Headings
+*******************************/
+
+h1 {
+    text-align: center;
+    color: #216869;
+    padding: 1em;
+}
+
+h2 {
+  text-align: center;
+  color: #216869;
+  padding: 1em;
+}
+
+h3 {
+  color: white;
+}
+
+
+  /*******************************
+  Content
+*******************************/
+
+p {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+}
+
+.infoList {
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+ .infoListItem {
+  margin-top:10px;
+}
+
+  /*******************************
+  Footer
+*******************************/
+
+footer {
+  background-color: #1f2421;
+  padding: 2em;
+}
+
+.fa-brands {
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
