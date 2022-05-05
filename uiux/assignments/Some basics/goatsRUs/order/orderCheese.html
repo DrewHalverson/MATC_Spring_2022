@@ -15,13 +15,18 @@
         <header>
             <h1>Goats 'R Us</h1>
 
-            <!-- I added this to make it easier to flip between pages -->
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../breeds.html">Breeds</a></li>
-                    <li><a href="../products.html">Products</a></li>
-                    <li><a href="orderCheese.html">Order</a></li>
+            <nav aria-label="Main Menu">
+                <ul role="menubar" aria-label="Main Menu">
+                    <li role="none"><a href="index.html" role="menuitem" aria-current="page" class="currentPage">Home</a></li>
+                    <li role="none"><a href="breeds.html" role="menuitem">Breeds</a></li>
+                    <li role="none"><a href="products.html" role="menuitem" aria-haspopup="true">Products</a>
+                        <ul aria-label="Product Sub-Menu" role="menu">
+                            <li role="none"><a href="#" role="menuitem">Goat Milk Soap</a></li>
+                            <li role="none"><a href="order/orderCheese.html" role="menuitem">Cheese</a></li>
+                            <li role="none"><a href="#" role="menuitem">Milk</a></li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </nav>
         </header>
@@ -33,24 +38,24 @@
                 <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
                     <fieldset>
                         <legend>Your Details</legend>
-                        <label>First Name</label>
-                        <input type="text" name="firstName">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
 
-                        <label>Last Name</label>
-                        <input type="text" name="lastName">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
 
-                        <label>Email Address</label>
-                        <input type="email" name="email">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" required>
 
-                        <label>Phone Number</label>
-                        <input type="text" name="phoneNumber">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" required>
                         <p class="helpText">Phone number must be 10 digits and include dashes.</p>
 
-                        <label>City</label>
-                        <input type="text" name="city">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" required>
 
                         <label for="pickState">Choose a state</label>
-                        <select name="pickState">
+                        <select name="pickState" id="pickState" required>
                             <option value="00">--select--</option>
                             <option value="01">Illnois</option>
                             <option value="02">Wisconsin</option>
@@ -58,26 +63,26 @@
                             <option value="04">Minnesota</option>
                         </select>
 
-                        <label>Zip</label>
-                        <input type="text" name="zip">
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip" id="zip" required>
                     </fieldset>
 
                     <fieldset>
                         <legend>Choose a type of goat cheese</legend>
-                        <input type="checkbox" name="fog">
-                        <label>Humboldt Fog</label>
+                        <input type="checkbox" name="fog" id="fog">
+                        <label for="fog">Humboldt Fog</label>
                         <br>
 
-                        <input type="checkbox" name="garrotxa">
-                        <label>Garrotxa</label>&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="garrotxa" id="garrotxa">
+                        <label for="garrotxa">Garrotxa</label>&nbsp;&nbsp;&nbsp;
                         <a href="https://www.cheese.com/garrotxa/" target="_blank">
-                            Learn more
-                            <img src="../images/newTabIcon.png" id="newTab" width="13">
+                            Learn more about garrotxa
+                            <img src="../images/newTabIcon.png" id="newTab" width="13" alt="New tab icon to learn more about garrotxa">
                         </a>
                         <br>
 
-                        <input type="checkbox" name="brunet">
-                        <label>Brunet</label>
+                        <input type="checkbox" name="brunet" id="brunet">
+                        <label for="brunet">Brunet</label>
                     </fieldset>
 
                     <fieldset>
@@ -89,7 +94,7 @@
                         <label for="noGift">No</label>
                     </fieldset>
 
-                    <input type="checkbox" name="coupon" value="yesCoupon">
+                    <input type="checkbox" name="coupon" value="yesCoupon" aria-label="coupon check box">
                     <span>I want to receive coupons and special offers.</span>
 
                     <div class="formButtons">

@@ -1,0 +1,44 @@
+Project 3 Part D
+Drew Halverson
+
+*********************
+
+1) List out the first name and last name for all of the employees.
+    a. This one is done for you...
+
+    SELECT FirstName, LastName FROM EMPLOYEE;
+
+2) List out the department name and office number for all of the departments.
+
+    SELECT DepartmentName, OfficeNumber FROM DEPARTMENT;
+
+3) List out the project name and max hours for all of the projects.
+
+    SELECT ProjectName, MaxHours FROM PROJECT;
+
+4) List out all of the columns and rows in the ASSIGNMENT table.
+
+    SELECT * FROM ASSIGNMENT;
+
+5) JOIN the EMPLOYEE and DEPARTMENT tables and list out the first name, last
+name, department name, and budget code for each employee:
+a. This one is done for you...
+
+    SELECT FirstName, LastName, DepartmentName, BudgetCode FROM
+    EMPLOYEE JOIN DEPARTMENT ON DEPARTMENT.DepartmentName =
+    EMPLOYEE.Department;
+
+    ***This didn't work for me. PHPMyAdmin returned a column is ambiguous error on some of the fieldnames and I needed to 
+    preface the field with the table name to make it work correctly?***
+
+6) JOIN the EMPLOYEE and DEPARTMENT tables and list out the first name, last
+name, department name, and budget code, but only for employees in the
+InfoSystems department.
+
+        SELECT EMPLOYEE.FirstName, EMPLOYEE.LastName, EMPLOYEE.DepartmentName, DEPARTMENT.BudgetCode FROM
+        EMPLOYEE JOIN DEPARTMENT ON DEPARTMENT.DepartmentName =
+        EMPLOYEE.DepartmentName
+        WHERE EMPLOYEE.DepartmentName = 'InfoSystems' ;
+
+    ***This works but returns "This table does not contain a unique column. Grid edit, checkbox, Edit, Copy and Delete features are not available." 
+    on the joined table. Is this what was supposed to happen?***

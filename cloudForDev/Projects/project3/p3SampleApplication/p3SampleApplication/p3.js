@@ -1,5 +1,5 @@
 let url =
-  " https://h9umb5xez9.execute-api.us-east-1.amazonaws.com/baseballStats";
+  "https://h9umb5xez9.execute-api.us-east-1.amazonaws.com/baseballStats/";
 
 const init = () => {
   document.querySelector("#addTeam").addEventListener("click", addNewTeam);

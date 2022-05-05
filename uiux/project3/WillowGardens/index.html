@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Willow Gardens</title>
+    <meta name="description" content="Home page for Willow Gardens, for all of your gardening needs!">
+    <title>Home - WG</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/488b1880f1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink"></a>
     <header>
         <img src="images/logoTransparent.png" alt="Willow Gardens Logo" width="200" height="200" class="centerLogo">
         <nav class="topNav">
             <ul>
-                <li><a href=index.html class="currentPage topNav-left">Home</a></li>
+                <li><a href=index.html class="currentPage topNav-left" aria-current="page">Home</a></li>
                 <li><a href=buyPlot.html class="topNav-centered">Apply for a plot</a></li>
                 <li><a href="gardeningTips.html" class="topNav-right">Gardening Tips</a></li>
             </ul>
@@ -22,12 +24,13 @@
     
     </header>
 
-    <main>
+    <main id="mainContent">
         <h1>Welcome to Willow Gardens</h1>
 
         <img src="images/food.jpg" alt="image of vegetables in a basket" class="center">
-
-        <p>Beautiful gardens are at the heart of any community. Westfield, WI, wants Willow Gardens to be an entry point for all community members to participate in gardening. Community gardeners can use the land to grow their food, positively impacting their household food security. We provide outdoor recreational activities and a fun and friendly environment for people of all ages, incomes, and cultures to work the land together and share their gardening knowledge and ideas. Gardeners assist in site maintenance and management through volunteer commitments.</p>
+        <article>
+        <p class="homeP">Beautiful gardens are at the heart of any community. Westfield, WI, wants Willow Gardens to be an entry point for all community members to participate in gardening. Community gardeners can use the land to grow their food, positively impacting their household food security. We provide outdoor recreational activities and a fun and friendly environment for people of all ages, incomes, and cultures to work the land together and share their gardening knowledge and ideas. Gardeners assist in site maintenance and management through volunteer commitments.</p>
+        </article>
         <div class="ctaContainer">
             <a href="buyPlot.html" class="callToAction">Click here to buy a plot!</a>
         </div>
