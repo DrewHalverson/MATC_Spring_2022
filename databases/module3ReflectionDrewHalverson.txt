@@ -1,0 +1,16 @@
+Introduction to Databases
+Module 3 reflection
+Drew Halverson
+
+
+1) Now that Project 3 is over, what are your first thoughts about it overall? Are they mostly positive or negative?
+	I enjoyed working on this project. It implemented everything we learned in module 3 and highlighted how to troubleshoot
+	queries when approach to database implementation varies. Positve. 
+
+2) If positive, what comes to mind specifically? Negative?
+	I enjoyed working with Vertabelo and seeing how everything came together on completion of the project. I am not a huge fan of phpMyAdmin. 
+	It feels clunky and dated. I think it was good to get to work with it because it is so ubiquitous, but I prefer other database management tools. 
+
+3) With regards to the Introduction to Databases course as a whole, what were some of the most challenging moments and what made them so?
+	Joins were tricky to sort out. I feel like I could take a whole semester to just understand how they work. My biggest challenge was probably all the 
+	work we did with Access at the beginning of the semester. Most of that was conditioned from having to work with it years ago, but I am still not a fan. =]

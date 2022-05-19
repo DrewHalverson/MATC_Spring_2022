@@ -49,7 +49,7 @@ const init = () => {
                 let taskData = JSON.parse(xhr.responseText);
 
                 let tasks = taskData.Items;
-
+ 
                 for(let i = 0; i < tasks.length; i++) {
 
                     let task = `${tasks[i].Description}`;
